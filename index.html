@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Shaine Hearns</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="aboutme.html" class="nav-item">About Me</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+        </div>
+    </nav>
+    <header>
+        <h1 class="hugetext">Shaine<br>Hearns<br><br><br>Rising Senior At<br>Eastern Christian<br>High School</h1>
+        <br>
+        <a href="https://github.com/ShaineHearns" target="_blank" class="circlelink">
+            <img src="github.png" class="linkedlogos">
+        </a>
+        <a href="https://www.linkedin.com/in/shaine-hearns-ba9458285/" target="blank_" class="circlelink">
+           <img src="linkedin.webp" class="linkedlogos">
+        </a>
+    </header>
+    <div class="content" id="about-me">
+        <div class="information">Welcome to my personal website! Use the navigation bar above to look around.
+        </div>
+    <script>
+        function applySavedBackgroundColor() {
+            let savedColor = localStorage.getItem('backgroundColor');
+            console.log("Saved color: ", savedColor); // Add this line for debugging
+            if (savedColor) {
+                document.body.style.backgroundColor = savedColor;
+            }
+        }
+        window.onload = applySavedBackgroundColor;
+    </script>
+</body>
+</html>
